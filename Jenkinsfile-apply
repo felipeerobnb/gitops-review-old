@@ -19,7 +19,7 @@ pipeline {
     }
     stage ('Apply resources') {
       when {
-        branch 'master'
+        branch 'main'
       }
       steps {
         sh 'oc apply -k samples'
